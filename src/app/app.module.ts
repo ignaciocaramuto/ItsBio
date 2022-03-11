@@ -2,16 +2,20 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
+// PrimeNG
+import { CardModule } from 'primeng/card';
+import { ButtonModule } from 'primeng/button';
+import { MenubarModule } from 'primeng/menubar';
+import { InputTextModule } from 'primeng/inputtext';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductComponent } from './product/product.component';
 import { HomeComponent } from './home/home.component';
 import { CartComponent } from './cart/cart.component';
 import { ProductsComponent } from './products/products.component';
+import { HeaderComponent } from './header/header.component';
 
-// PrimeNG
-import { CardModule } from 'primeng/card';
-import { ButtonModule } from 'primeng/button';
 
 @NgModule({
   declarations: [
@@ -19,14 +23,17 @@ import { ButtonModule } from 'primeng/button';
     ProductComponent,
     HomeComponent,
     CartComponent,
-    ProductsComponent
+    ProductsComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     CardModule,
-    ButtonModule
+    ButtonModule,
+    MenubarModule,
+    InputTextModule
   ],
   providers: [],
   bootstrap: [AppComponent]
