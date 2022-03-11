@@ -16,11 +16,13 @@ export class HeaderComponent implements OnInit {
     this.items = [
       {
           label: 'Productos',
-          icon: 'fa fa-shopping-bag'
+          icon: 'fa fa-shopping-bag',
+          routerLink: '/products'
       },
       {
           label: 'Quiénes somos',
-          icon: 'fa fa-info'
+          icon: 'fa fa-info',
+          routerLink: '/about-us'
       }
     ];
   }
