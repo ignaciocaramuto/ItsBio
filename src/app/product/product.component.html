@@ -5,8 +5,17 @@
         <img [src]="product.image" alt="">
     <ng-template pTemplate="footer">
         <div class="product-footer">
-            <strong>{{ product.price | currency }}</strong>
-            <button (click)="addCart()">Agregar al carrito</button>
+            <div class="product-price">
+                {{ product.price | currency }}
+            </div>
+            <button
+                pButton
+                pRipple
+                type="button"
+                icon="fa fa-cart-plus fa-lg"
+                class="p-button-rounded p-button-text"
+                (click)="addCart()">
+            </button>
         </div>
     </ng-template>
 </p-card>
