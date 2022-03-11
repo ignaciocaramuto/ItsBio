@@ -15,14 +15,14 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
     this.items = [
       {
-          label: 'Productos',
-          icon: 'fa fa-shopping-bag',
-          routerLink: '/products'
+        label: 'Productos',
+        icon: 'fa fa-shopping-bag',
+        routerLink: '/products'
       },
       {
-          label: 'Quiénes somos',
-          icon: 'fa fa-info',
-          routerLink: '/about-us'
+        label: 'Quiénes somos',
+        icon: 'fa fa-info',
+        routerLink: '/about-us'
       }
     ];
   }
