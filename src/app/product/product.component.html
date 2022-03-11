@@ -1,9 +1,9 @@
 <p-card>
     <ng-template pTemplate="header">
     </ng-template>
-        <img [src]="product.image" alt="">
+        <img [src]="product.image" alt="" class="mouse-over" (click)="openProductDetail()">
     <ng-template pTemplate="footer">
-        <div class="product-name">{{ product.title }}</div>
+        <div class="product-name mouse-over" (click)="openProductDetail()">{{ product.title }}</div>
         <div class="product-footer">
             <div class="product-price">
                 {{ product.price | currency }}
