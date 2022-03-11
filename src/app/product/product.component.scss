@@ -8,7 +8,19 @@ img {
 }
 
 .product-price {
-    font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: 600;
     align-self: center;
-    height: 100%;
+}
+
+.product-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+:host ::ng-deep {
+    .p-card .p-card-footer {
+        padding: 0 0 0 0;
+    }
 }
