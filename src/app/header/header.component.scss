@@ -1,5 +1,15 @@
+.header {
+    width: 100%;
+    height: 70px;
+    margin-bottom: 2em;
+    background-color: #acca3e;
+}
+
 :host ::ng-deep {
-    .p-menubar {
-        margin-bottom: 1em;
+    .p-button.p-button-text {
+        color: black;
+    }
+    .p-input-icon-left > .p-inputtext {
+        height: 40px;
     }
 }

@@ -1,16 +1,26 @@
-<p-menubar [model]="items">
-    <ng-template pTemplate="start">
-        <!-- <img src="assets/images/itsbio-logo.jpg" height="40" class="mr-2"> -->
-    </ng-template>
-    <ng-template pTemplate="end">
-        <button
-            pButton
-            pRipple
-            type="button"
-            icon="fa fa-shopping-cart fa-lg"
-            class="p-button-rounded p-button-text"
-            [routerLink]="'/cart'">
-        </button>
-        <input type="text" pInputText placeholder="Buscar">
-    </ng-template>
-</p-menubar>
+<div class="header">
+    <div class="flex justify-content-evenly align-items-center" style="height: 100%;">
+        <img src="assets/images/itsbio-logo.jpg" height="40" class="ml-2">
+        <span class="p-input-icon-left">
+            <i class="fa fa-search"></i>
+            <input type="text" size="50" pInputText placeholder="Buscar" [(ngModel)]="search" />
+        </span>
+        <div class="mr-2">
+            <button
+                pButton
+                pRipple
+                type="button"
+                icon="fa fa-shopping-cart fa-lg"
+                class="p-button-rounded p-button-text fa-lg"
+                [routerLink]="'/cart'">
+            </button>
+            <button
+                pButton
+                pRipple
+                type="button"
+                icon="fa fa-user-circle-o fa-lg"
+                class="p-button-rounded p-button-text fa-lg">
+            </button>
+        </div>
+    </div>
+</div>

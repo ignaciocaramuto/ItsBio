@@ -8,23 +8,11 @@ import { MenuItem } from 'primeng/api';
 })
 export class HeaderComponent implements OnInit {
 
-  items: MenuItem[];
+  search: string;
 
   constructor() { }
 
   ngOnInit(): void {
-    this.items = [
-      {
-        label: 'Productos',
-        icon: 'fa fa-shopping-bag',
-        routerLink: '/products'
-      },
-      {
-        label: 'Quiénes somos',
-        icon: 'fa fa-info',
-        routerLink: '/about-us'
-      }
-    ];
   }
 
 }
